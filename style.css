@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100vh;
+    background-color: #29aad9;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+}
+
+.logo{
+        position: relative;
+        font-size: 25px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 750;
+}
+
+p{
+    position: relative;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 500px;
+    align-items: center;
+    color: #ededed;
+}
+
+body, html {
+    height: 100%;
+    margin: 0; 
+}
+
+.container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.LinkProject {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #ededed;
+    text-decoration: none; 
+    padding: 10px; 
+}
+
+.LinkProject:hover {
+    color: darkblue; 
+}
+
+
+.medsos {
+    display: flex;
+    position: absolute;
+    top: 0.8em;
+    right: 0.8em;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    z-index: 4;
+}
+
+.medsos i {
+    font-size: x-large;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+.medsos i:hover {
+    color: white;
+}
+
+.slider {
+    display: flex;
+    position: absolute;
+    bottom: 0.8em;
+    right: 0.8em;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    z-index: 5;
+}
+
+.slider a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background 0.5s ease;
+}
+
+.slider a:hover {
+    background-color: white;
+}
+
+.container-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.content-one h1 {
+    text-transform: uppercase;
+    font-size: 8em;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.content-one h1::before {
+    content: attr(data-fill-text);
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    color: #fff;
+    -webkit-text-stroke: 0px transparent;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+
+.content-one h1:hover::before {
+    width: 100%;
+    text-shadow: 0.5px 0.5px 5px black;
+}
+
+.images1 img {
+    height: 100vh;
+    margin-top: 2em;
+}
+
+.frameset {
+    width: 100%;
+    height: 100%;
+}
+
+.content-two h2 {
+    text-transform: uppercase;
+    font-size: 3.5em;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    text-align: center;
+}
+
+.skillSet {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.skillSet>div {
+    flex: 1;
+    width: 50vh;
+    height: 50vh;
+    background-color: #29aad9;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+}
+
+.skillSet>div:hover {
+    color: white;
+    box-shadow: 0.1px 0.1px 5px rgba(255, 255, 255, 0.3);
+}
+
+.content-three {
+    display: flex;
+    flex-direction: row;
+}
+
+.images2 {
+    position: relative;
+    top: -5em;
+    left: 0em;
+    flex: 3;
+}
+
+.images2 img {
+    height: 90vh;
+}
+
+.formulir {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulir h2 {
+    font-size: 3.7em;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    line-height: 1em;
+    margin-top: -1em;
+}
+
+.inpt {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    color: white;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+.inpt input {
+    background-color: transparent;
+    padding: 0.5em;
+    width: 70%;
+    font-size: 1em;
+    color: white;
+    border-style: solid;
+    border-top: #fff;
+    border-left: #fff;
+    border-right: #fff;
+}
+
+.inpt span {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    pointer-events: none;
+    transition: all 0.4s ease-out;
+}
+
+#subs {
+    width: 30%;
+    background-color: white;
+    padding: 0.6em 1.2em;
+    color: #89ddfb;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.inpt input:focus~span,
+.inpt input:valid~span {
+    font-size: 0.7em;
+    margin-top: -1.4em;
+    background-color: #1f8db6;
+    padding: 0 1em;
+}
+
+.inpt input:focus {
+    border-color: #29aad9;
+    box-shadow: 0.3px 0.7px 5px black;
+    outline: none;
+}
+
+#subs:hover {
+    color: #29aad9;
+    box-shadow: 0.1px 0.4px 3px black;
+}
